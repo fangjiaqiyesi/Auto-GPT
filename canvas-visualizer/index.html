@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State Space Glow</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="controls">
+        <label>
+          Mode
+          <select id="mode">
+            <option value="run">run</option>
+            <option value="stay">stay</option>
+            <option value="keep">keep</option>
+            <option value="pause">pause</option>
+          </select>
+        </label>
+        <div class="sliders" id="sliders"></div>
+        <div class="buttons">
+          <button data-capture="start">Capture Start</button>
+          <button data-capture="key">Capture Key</button>
+          <button data-capture="end">Capture End</button>
+        </div>
+      </div>
+      <canvas id="space"></canvas>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
